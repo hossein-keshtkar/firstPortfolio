@@ -1,0 +1,273 @@
+@import "../../gelobal.scss";
+
+.intro {
+  background-color: #fff;
+  display: flex;
+
+  @include smallMobile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include biggerTablet {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include ipod {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left {
+    flex: 0.5;
+    overflow: hidden;
+
+    .imageContainer {
+      background-color: crimson;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      float: right;
+      border-radius: 50%;
+      height: 800px;
+      width: 800px;
+
+      @include smallMobile {
+        align-items: flex-start;
+        justify-content: center;
+      }
+
+      @include mobile {
+        align-items: flex-start;
+        justify-content: center;
+      }
+
+      @include tablet {
+        align-items: flex-start;
+        justify-content: center;
+      }
+
+      @include biggerTablet {
+        align-items: flex-start;
+        justify-content: center;
+      }
+
+      @include ipod {
+        align-items: flex-start;
+        justify-content: center;
+      }
+
+      img {
+        height: 90%;
+
+        @include smallMobile {
+          height: 40%;
+        }
+
+        @include mobile {
+          height: 60%;
+        }
+
+        @include tablet {
+          height: 60%;
+        }
+
+        @include biggerTablet {
+          height: 60%;
+        }
+
+        @include ipod {
+          height: 60%;
+        }
+      }
+    }
+  }
+
+  .right {
+    flex: 0.5;
+
+    .wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 50px;
+
+      @include smallMobile {
+        padding: 0;
+        align-items: center;
+      }
+
+      @include mobile {
+        padding: 0;
+        align-items: center;
+      }
+
+      @include tablet {
+        padding: 0;
+        align-items: center;
+      }
+
+      @include biggerTablet {
+        padding: 0;
+        align-items: center;
+      }
+
+      @include ipod {
+        padding: 0;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 60px;
+        margin: 10px 0;
+
+        @include smallMobile {
+          font-size: 30px;
+        }
+
+        @include mobile {
+          font-size: 40px;
+        }
+
+        @include tablet {
+          font-size: 40px;
+        }
+
+        @include biggerTablet {
+          font-size: 40px;
+        }
+
+        @include ipod {
+          font-size: 40px;
+        }
+      }
+
+      h2 {
+        font-size: 35px;
+
+        @include smallMobile {
+          font-size: 25px;
+        }
+      }
+
+      h3 {
+        font-size: 30px;
+
+        @include smallMobile {
+          font-size: 20px;
+        }
+
+        @include mobile {
+          font-size: 20px;
+        }
+
+        @include tablet {
+          font-size: 20px;
+        }
+
+        @include biggerTablet {
+          font-size: 20px;
+        }
+
+        @include ipod {
+          font-size: 20px;
+        }
+
+        span {
+          color: crimson;
+        }
+
+        .ityped-cursor {
+          animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+          50% {
+            opacity: 1;
+          }
+
+          100% {
+            opacity: 0;
+          }
+        }
+      }
+
+      a {
+        position: absolute;
+        bottom: 10px;
+        left: 40%;
+
+        @include smallMobile {
+          left: 45%;
+        }
+
+        @include mobile {
+          left: 42%;
+        }
+
+        @include tablet {
+          left: 42%;
+        }
+
+        @include biggerTablet {
+          left: 42%;
+        }
+
+        @include ipod {
+          left: 42%;
+        }
+
+        img {
+          height: 100px;
+          width: 100px;
+          animation: arrowBlink 2s infinite;
+
+          @include smallMobile {
+            height: 40px;
+            width: 40px;
+          }
+
+          @include mobile {
+            height: 40px;
+            width: 40px;
+          }
+
+          @include tablet {
+            height: 40px;
+            width: 40px;
+          }
+
+          @include biggerTablet {
+            height: 40px;
+            width: 40px;
+          }
+
+          @include ipod {
+            height: 40px;
+            width: 40px;
+          }
+
+          @keyframes arrowBlink {
+            100% {
+              opacity: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

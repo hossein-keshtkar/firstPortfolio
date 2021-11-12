@@ -1,0 +1,142 @@
+@import "../../gelobal.scss";
+
+.portfolio {
+  background-color: #fff;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  display: flex;
+
+  h1 {
+    font-size: 40px;
+    overflow: hidden;
+    margin: 10px;
+
+    @include smallMobile {
+      font-size: 20px;
+    }
+
+    @include mobile {
+      font-size: 30px;
+    }
+
+    @include tablet {
+      font-size: 30px;
+    }
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 10px;
+    padding: 0;
+
+    @include smallMobile {
+      justify-content: space-evenly;
+      overflow: hidden;
+      flex-wrap: wrap;
+    }
+
+    li {
+      overflow: hidden;
+
+      @include mobile {
+        justify-content: space-between;
+        font-size: 0.8rem;
+        font-weight: 500;
+        flex-wrap: wrap;
+      }
+
+      @include tablet {
+        justify-content: space-between;
+        font-size: 1rem;
+        flex-wrap: wrap;
+      }
+
+      @include biggerTablet {
+        justify-content: space-between;
+        font-size: 1rem;
+        flex-wrap: wrap;
+      }
+
+      @include ipod {
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  .container {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    margin: 25px;
+    width: 70%;
+
+    @include smallMobile {
+      height: 75%;
+      width: 100%;
+      margin: 0;
+    }
+
+    @include mobile {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+    }
+
+    @include tablet {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+    }
+
+    @include biggerTablet {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+    }
+
+    @include ipod {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+    }
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+    }
+
+    .item {
+      border: 1px solid rgb(235, 235, 235);
+      transition: all 0.5s ease;
+      justify-content: center;
+      border-radius: 20px;
+      align-items: center;
+      position: relative;
+      margin: 10px 20px;
+      cursor: pointer;
+      display: flex;
+      height: 150px;
+      color: #fff;
+      width: 250px;
+
+      &:hover {
+        background-color: $mainColor;
+        img {
+          opacity: 0.2;
+          z-index: 0;
+        }
+      }
+
+      h3 {
+        position: absolute;
+        font-size: 20px;
+      }
+    }
+  }
+}

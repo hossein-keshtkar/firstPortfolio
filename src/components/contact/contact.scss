@@ -1,0 +1,181 @@
+@import "../../gelobal.scss";
+
+.contact {
+  background-color: #fff;
+  display: flex;
+
+  @include smallMobile {
+    flex-direction: column;
+  }
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  @include tablet {
+    flex-direction: column;
+  }
+
+  @include biggerTablet {
+    flex-direction: column;
+  }
+
+  .left {
+    height: 100%;
+    width: 100%;
+    flex: 1;
+
+    @include smallMobile {
+      overflow: hidden;
+      flex: 0.4;
+    }
+
+    @include mobile {
+      overflow: hidden;
+      flex: 0.45;
+    }
+
+    @include tablet {
+      overflow: hidden;
+      flex: 0.45;
+    }
+
+    @include biggerTablet {
+      overflow: hidden;
+      flex: 0.45;
+    }
+
+    @include ipod {
+      overflow: hidden;
+      flex: 0.7;
+    }
+
+    img {
+      @include smallMobile {
+        height: 100%;
+        width: 100%;
+      }
+
+      @include mobile {
+        height: 100%;
+        width: 100%;
+      }
+
+      @include tablet {
+        height: 100%;
+        width: 100%;
+      }
+
+      @include biggerTablet {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .right {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    flex: 1;
+
+    h2 {
+      font-size: 30px;
+    }
+
+    form {
+      justify-content: space-around;
+      flex-direction: column;
+      align-items: center;
+      display: flex;
+      height: 70%;
+      width: 70%;
+
+      @include smallMobile {
+        width: 90%;
+      }
+
+      @include mobile {
+        width: 90%;
+      }
+
+      @include tablet {
+        height: 90%;
+        width: 90%;
+      }
+
+      @include biggerTablet {
+        height: 90%;
+        width: 90%;
+      }
+
+      input {
+        font-size: 14px;
+        height: 30px;
+        width: 300px;
+
+        @include smallMobile {
+          margin: 5px 0;
+          width: 95%;
+        }
+
+        @include mobile {
+          margin: 10px 0;
+          width: 75%;
+        }
+      }
+
+      textarea {
+        font-size: 14px;
+        height: 200px;
+        width: 300px;
+
+        @include smallMobile {
+          margin: 5px 0;
+          width: 95%;
+        }
+
+        @include mobile {
+          margin: 5px;
+          width: 75%;
+        }
+      }
+
+      span {
+        color: green;
+
+        @include smallMobile {
+          margin: 5px 0;
+        }
+
+        @include mobile {
+          margin: 5px 0;
+        }
+      }
+
+      button {
+        background-color: crimson;
+        border-radius: 10px;
+        font-weight: 500;
+        cursor: pointer;
+        color: #fff;
+        height: 30px;
+        border: none;
+        width: 150px;
+
+        @include smallMobile {
+          margin: 5px 0;
+        }
+
+        @include mobile {
+          margin: 5px 0;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}

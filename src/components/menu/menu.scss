@@ -1,0 +1,43 @@
+@import "../../gelobal.scss";
+
+.menu {
+  background-color: $mainColor;
+  transition: all 1.5s ease;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  display: flex;
+  height: 100vh;
+  right: -300px;
+  width: 300px;
+  z-index: 2;
+
+  ul {
+    text-decoration: none;
+    list-style: none;
+    font-size: 30px;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    width: 60%;
+
+    li {
+      margin-bottom: 15px;
+
+      a {
+        text-decoration: inherit;
+        font-size: inherit;
+        color: inherit;
+        
+        &:hover {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  &.active {
+    right: 0;
+  }
+}

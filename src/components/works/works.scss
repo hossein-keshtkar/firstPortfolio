@@ -1,0 +1,286 @@
+@import "../../gelobal.scss";
+
+.works {
+  background-color: crimson;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  display: flex;
+
+  .arrow {
+    transition: all 0.5s ease;
+    position: absolute;
+    cursor: pointer;
+    height: 50px;
+
+    @include smallMobile {
+      display: none;
+    }
+
+    @include mobile {
+      display: none;
+    }
+
+    @include tablet {
+      height: 35px;
+    }
+
+    &.left {
+      left: 5%;
+      transform: rotate(180deg);
+
+      @include tablet {
+        left: 2%;
+      }
+
+      @include biggerTablet {
+        left: 2%;
+      }
+
+      @include ipod {
+        left: 2%;
+      }
+    }
+
+    &.right {
+      right: 5%;
+
+      @include tablet {
+        right: 2%;
+      }
+
+      @include biggerTablet {
+        right: 2%;
+      }
+
+      @include ipod {
+        right: 2%;
+      }
+    }
+
+    &:hover {
+      height: 60px;
+
+      @include tablet {
+        height: 40px;
+      }
+    }
+  }
+
+  .slider {
+    transition: all 1s ease;
+    position: absolute;
+    display: flex;
+    height: 350px;
+    left: 0;
+
+    @include smallMobile {
+      justify-content: space-around;
+      flex-direction: column;
+      position: relative;
+      flex-wrap: wrap;
+      height: 100%;
+    }
+
+    @include mobile {
+      justify-content: space-evenly;
+      flex-direction: column;
+      position: relative;
+      flex-wrap: wrap;
+      height: 100%;
+    }
+
+    .container {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      width: 100vw;
+
+      .item {
+        transition: all 0.5s ease;
+        background-color: #fff;
+        justify-content: center;
+        border-radius: 20px;
+        align-items: center;
+        display: flex;
+        height: 100%;
+        width: 700px;
+
+        @include smallMobile {
+          margin: 10px 5%;
+          height: 170px;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+
+        @include mobile {
+          margin: 10px 5%;
+          height: 170px;
+
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+
+        @include tablet {
+          margin: 10px 5%;
+          height: 70%;
+          width: 70%;
+        }
+
+        @include biggerTablet {
+          margin: 10px 5%;
+          height: 95%;
+          width: 70%;
+        }
+
+        @include ipod {
+          margin: 10px 5%;
+          height: 100%;
+          width: 70%;
+        }
+      }
+
+      .left {
+        flex: 4;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        height: 80%;
+
+        @include smallMobile {
+          flex: 7;
+          height: 100%;
+        }
+
+        @include mobile {
+          flex: 7;
+          height: 95%;
+        }
+
+        @include tablet {
+          flex: 6;
+          height: 100%;
+        }
+
+        .leftContainer {
+          justify-content: space-evenly;
+          flex-direction: column;
+          display: flex;
+          height: 70%;
+          width: 90%;
+
+          @include smallMobile {
+            width: 100%;
+            height: 90%;
+            margin: 0 10px;
+          }
+
+          @include mobile {
+            width: 100%;
+            height: 100%;
+            margin: 0 10px;
+          }
+
+          @include tablet {
+            width: 100%;
+            height: 100%;
+            margin: 0 10px;
+          }
+
+          @include biggerTablet {
+            width: 100%;
+            height: 100%;
+            margin: 0 10px;
+          }
+
+          .imgContainer {
+            background-color: rgb(255, 186, 161);
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            display: flex;
+            height: 40px;
+            width: 40px;
+
+            img {
+              width: 25px;
+            }
+          }
+
+          h2 {
+            font-size: 20px;
+
+            @include smallMobile {
+              font-size: 11px;
+              margin: 5px 0;
+            }
+          }
+
+          p {
+            font-size: 13px;
+
+            @include smallMobile {
+              font-size: 10px;
+              margin: 1px;
+            }
+          }
+
+          span {
+            text-decoration: underline;
+            font-weight: 600;
+            font-size: 12px;
+            cursor: pointer;
+
+            @include smallMobile {
+              font-size: 11px;
+              margin: 10px 0;
+            }
+          }
+        }
+      }
+
+      .right {
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        display: flex;
+        height: 100%;
+        width: 100%;
+        flex: 8;
+
+        @include smallMobile {
+          flex: 5;
+        }
+
+        @include mobile {
+          flex: 5;
+        }
+
+        @include tablet {
+          flex: 6;
+        }
+
+        img {
+          width: 400px;
+          transform: rotate(-10deg);
+
+          @include smallMobile {
+            height: 215px;
+            width: 100%;
+          }
+
+          @include mobile {
+            height: 240px;
+          }
+
+          @include tablet {
+            height: 275px;
+          }
+        }
+      }
+    }
+  }
+}
